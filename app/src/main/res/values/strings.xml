@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TaipeiWaitingBusDemo</string>
+    <string name="network_exception">網路異常，請稍後重試</string>
+    <string name="functional_development">功能開發中，敬請期待</string>
+    <string name="activity_main_again_click">再點一次離開</string>
+    <string name="fragment_main_home_page_title">台北等公車</string>
+    <string name="fragment_main_home_page_public_bicycles">公共自行車</string>
+    <string name="fragment_main_home_page_mrt_road_map">捷運路線圖</string>
+    <string name="fragment_main_home_page_taiwan_good_travel">台灣好行</string>
+    <string name="fragment_main_home_page_train_timetable">火車時刻表</string>
+    <string name="fragment_main_home_page_bus_tracking">公車追蹤</string>
+    <string name="fragment_main_home_page_data_backup">資料備份</string>
+    <string name="fragment_main_home_page_airport_passenger_transport">機場客運</string>
+    <string name="fragment_main_home_page_high_speed_rail_timetable">高鐵時刻表</string>
+    <string name="fragment_main_home_page_setting">設定</string>
+    <string name="fragment_main_home_page_route_search">路線搜尋</string>
+    <string name="fragment_main_home_page_nearby_sign">附近站牌</string>
+    <string name="fragment_main_home_page_route_planning">路線規劃</string>
+    <string name="fragment_main_home_page_common_sign">常用站牌</string>
+    <string name="fragment_main_home_page_program_version">程式版本 V1.9.9(109010231), 路線版本 V426</string>
+    <string name="fragment_main_home_page_taiwan_good_travel_introduction_event">活動簡介:</string>
+    <string name="fragment_main_home_page_taiwan_good_travel_source_of_information">資料來源:</string>
+    <string name="fragment_main_home_page_taiwan_good_travel_ministry_of_communications">交通部</string>
+    <string name="fragment_main_home_page_taiwan_good_travel_dynamic">動態</string>
+    <string name="fragment_main_home_page_taiwan_good_travel_ticket">套票</string>
+    <string name="fragment_main_home_page_taiwan_good_travel_timetable">時刻表</string>
+    <string name="fragment_main_home_page_taiwan_good_travel_official_website">官網</string>
+    <string name="dialog_loading_text">讀取中…</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 4個按鈕欄 -->
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <!-- 路線搜尋 -->
+            <LinearLayout
+                    android:id="@+id/routeSearchLinearLayout"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/selector_fragment_main_home_page_route_search"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                <View
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <ImageView
+                        android:background="@drawable/icon_fragment_main_home_page_route_search"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/fragment_main_home_page_route_search"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <!-- 附近站牌 -->
+            <LinearLayout
+                    android:id="@+id/nearbySignLinearLayout"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/selector_fragment_main_home_page_nearby_sign"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                <View
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <ImageView
+                        android:background="@drawable/icon_fragment_main_home_page_nearby_sign"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/fragment_main_home_page_nearby_sign"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <!-- 路線規劃 -->
+            <LinearLayout
+                    android:id="@+id/routePlanningLinearLayout"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/selector_fragment_main_home_page_route_planning"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                <View
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <ImageView
+                        android:background="@drawable/icon_fragment_main_home_page_route_planning"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/fragment_main_home_page_route_planning"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <!-- 常用站牌 -->
+            <LinearLayout
+                    android:id="@+id/commonSignLinearLayout"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/selector_fragment_main_home_page_common_sign"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                <View
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <ImageView
+                        android:background="@drawable/icon_fragment_main_home_page_common_sign"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/fragment_main_home_page_common_sign"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

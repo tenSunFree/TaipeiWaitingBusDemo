@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorShadow">#D8D8D8</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="fragment_main_home_page_root_background">#EFEFEF</color>
+    <color name="fragment_main_home_page_title_bar_background">#0D47A1</color>
+    <color name="fragment_main_home_page_route_search_pressed_background">#3949AB</color>
+    <color name="fragment_main_home_page_route_search_default_background">#9E9E9E</color>
+    <color name="fragment_main_home_page_nearby_sign_pressed_background">#00897B</color>
+    <color name="fragment_main_home_page_route_planning_pressed_background">#E65100</color>
+    <color name="fragment_main_home_page_common_sign_pressed_background">#D32F2F</color>
+    <color name="fragment_main_home_page_program_version_background">#99E3E3E3</color>
+    <color name="fragment_main_home_page_program_version_text">#7E7E7E</color>
+    <color name="fragment_main_taiwan_good_travel_recycler_view_item_background">#FAFAFA</color>
+    <color name="fragment_main_taiwan_good_travel_county_name">#00897B</color>
+    <color name="fragment_main_taiwan_good_travel_tab_layout_shadow">#001475</color>
+    <color name="fragment_main_taiwan_good_travel_event_name">#E54C00</color>
+    <color name="fragment_main_taiwan_good_travel_introduction">#8D8D8D</color>
+    <color name="fragment_main_taiwan_good_dynamic">#E0E0E0</color>
+</resources>

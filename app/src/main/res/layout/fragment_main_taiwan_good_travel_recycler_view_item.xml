@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/fragment_main_taiwan_good_travel_recycler_view_item_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- 主要 -->
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            <!-- 活動名稱..等 -->
+            <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <!-- 活動名稱 -->
+                <TextView
+                        android:maxEms="9"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/fragment_main_taiwan_good_travel_event_name"
+                        android:textSize="20dp"
+                        android:id="@+id/eventNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                <!-- 縣市名稱 -->
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_fragment_main_home_page_taiwan_good_travel_county_name"
+                            android:layout_width="44dp"
+                            android:layout_height="24dp"/>
+
+                    <TextView
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:layout_margin="4dp"
+                            android:id="@+id/countyNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            <!-- 活動簡介..等 -->
+            <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:text="@string/fragment_main_home_page_taiwan_good_travel_introduction_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <!-- 活動簡介 -->
+                <TextView
+                        android:textSize="15dp"
+                        android:textColor="@color/fragment_main_taiwan_good_travel_introduction"
+                        android:ellipsize="end"
+                        android:lines="5"
+                        android:id="@+id/introductionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            <!-- 資料來源..等 -->
+            <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:text="@string/fragment_main_home_page_taiwan_good_travel_source_of_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:text="@string/fragment_main_home_page_taiwan_good_travel_ministry_of_communications"
+                        android:textSize="15dp"
+                        android:textColor="@color/fragment_main_taiwan_good_travel_introduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            <!-- 動態 套票..等4個按鈕 -->
+            <LinearLayout
+                    android:gravity="right|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <!-- 動態 -->
+                <LinearLayout
+                        android:id="@+id/dynamicLinearLayout"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:background="@drawable/selector_fragment_main_taiwan_good_travel_recycler_view_item_dynamic"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/icon_fragment_main_taiwan_good_travel_dynamic"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"/>
+
+                    <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp"
+                            android:text="@string/fragment_main_home_page_taiwan_good_travel_dynamic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- 套票 -->
+                <LinearLayout
+                        android:id="@+id/ticketLinearLayout"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:background="@drawable/selector_fragment_main_taiwan_good_travel_recycler_view_item_dynamic"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/icon_fragment_main_taiwan_good_travel_ticket"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"/>
+
+                    <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp"
+                            android:text="@string/fragment_main_home_page_taiwan_good_travel_ticket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- 時刻表 -->
+                <LinearLayout
+                        android:id="@+id/timetableLinearLayout"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:background="@drawable/selector_fragment_main_taiwan_good_travel_recycler_view_item_dynamic"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/icon_fragment_main_taiwan_good_travel_timetable"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"/>
+
+                    <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp"
+                            android:text="@string/fragment_main_home_page_taiwan_good_travel_timetable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- 官網 -->
+                <LinearLayout
+                        android:id="@+id/officialWebsiteLinearLayout"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:background="@drawable/selector_fragment_main_taiwan_good_travel_recycler_view_item_dynamic"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/icon_fragment_main_taiwan_good_travel_official_website"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"/>
+
+                    <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp"
+                            android:text="@string/fragment_main_home_page_taiwan_good_travel_official_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+        </LinearLayout>
+
+        <!-- 分隔線 -->
+        <View
+                android:id="@+id/view"
+                android:background="@color/colorShadow"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+    </LinearLayout>
+</layout>

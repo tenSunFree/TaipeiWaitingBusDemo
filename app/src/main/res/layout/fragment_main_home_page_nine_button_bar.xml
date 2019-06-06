@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 9個按鈕欄 -->
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="0dp"/>
+
+        <!-- 公共自行車..等 -->
+        <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 公共自行車 -->
+            <LinearLayout
+                    android:id="@+id/publicBicyclesLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_public_bicycles"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_public_bicycles"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 捷運路線圖 -->
+            <LinearLayout
+                    android:id="@+id/mrtRoadMapLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_mrt_road_map"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_mrt_road_map"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 台灣好行 -->
+            <LinearLayout
+                    android:id="@+id/taiwanGoodTravelLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_taiwan_good_travel"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_taiwan_good_travel"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="0dp"/>
+
+        <!-- 火車時刻表..等 -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 火車時刻表 -->
+            <LinearLayout
+                    android:id="@+id/trainTimetableLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_train_timetable"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_train_timetable"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 公車追蹤 -->
+            <LinearLayout
+                    android:id="@+id/busTrackingLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_bus_tracking"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_bus_tracking"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 資料備份 -->
+            <LinearLayout
+                    android:id="@+id/dataBackupLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_data_backup"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_data_backup"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="0dp"/>
+
+        <!-- 機場客運..等 -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 機場客運 -->
+            <LinearLayout
+                    android:id="@+id/airportPassengerTransportLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_airport_passenger_transport"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_airport_passenger_transport"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 高鐵時刻表 -->
+            <LinearLayout
+                    android:id="@+id/highSpeedRailTimetableLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_high_speed_rail_timetable"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_high_speed_rail_timetable"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- 設定 -->
+            <LinearLayout
+                    android:id="@+id/settingLinearLayout"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:background="@drawable/selector_fragment_main_home_page_setting"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/fragment_main_home_page_setting"
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="0dp"/>
+    </LinearLayout>
+</layout>

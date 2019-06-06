@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid
+                android:color="@color/fragment_main_taiwan_good_travel_county_name"/>
+            <stroke
+                android:width="0dp"
+                android:color="@color/colorPrimaryDark"/>
+            <corners
+                android:radius="150dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          tools:ignore="MissingDefaultResource">
+
+    <item android:state_pressed="true"
+          android:drawable="@color/fragment_main_home_page_route_search_default_background"/>
+
+    <item android:drawable="@color/fragment_main_home_page_route_planning_pressed_background"/>
+</selector>

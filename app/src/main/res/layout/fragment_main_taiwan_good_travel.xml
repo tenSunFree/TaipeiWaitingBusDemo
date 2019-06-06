@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+            android:background="@color/fragment_main_home_page_root_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+        <!-- 標題欄 -->
+        <LinearLayout
+                android:id="@+id/titleBarLinearLayout"
+                android:gravity="center_vertical"
+                android:background="@color/fragment_main_home_page_title_bar_background"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <FrameLayout
+                    android:id="@+id/previousPageFrameLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/icon_fragment_main_taiwan_good_travel_previous_page"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+            </FrameLayout>
+
+            <TextView
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:text="@string/fragment_main_home_page_taiwan_good_travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 列表 -->
+        <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/listLinearLayout"
+                android:orientation="vertical"
+                android:background="@color/fragment_main_home_page_title_bar_background"
+                android:layout_weight="10.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <android.support.design.widget.TabLayout
+                    app:tabTextAppearance="@style/CustomTabLayoutText"
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:tabIndicatorColor="@color/colorWhite"
+                    app:tabIndicatorHeight="4dp"
+                    app:tabMode="fixed"
+                    app:tabTextColor="#99D0D9E7"
+                    app:tabSelectedTextColor="@color/colorWhite"/>
+
+            <View
+                    android:background="@color/fragment_main_taiwan_good_travel_tab_layout_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+            <android.support.v4.view.ViewPager
+                    android:overScrollMode="never"
+                    android:background="@color/colorShadow"
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

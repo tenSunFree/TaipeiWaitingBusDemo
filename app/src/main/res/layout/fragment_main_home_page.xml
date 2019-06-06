@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+            android:background="@color/fragment_main_home_page_root_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+        <!-- 標題欄 -->
+        <LinearLayout
+                android:background="@color/fragment_main_home_page_title_bar_background"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:text="@string/fragment_main_home_page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 9個按鈕欄 -->
+        <FrameLayout
+                android:background="@color/fragment_main_home_page_root_background"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <include
+                    android:id="@+id/nineButtonBarInclude"
+                    layout="@layout/fragment_main_home_page_nine_button_bar"/>
+        </FrameLayout>
+
+        <!-- 4個按鈕欄 -->
+        <FrameLayout
+                android:layout_weight="4.9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <include
+                    android:id="@+id/fourButtonBarInclude"
+                    layout="@layout/fragment_main_home_page_four_button_bar"/>
+        </FrameLayout>
+
+        <!-- 程式版本 -->
+        <FrameLayout
+                android:background="@color/fragment_main_home_page_program_version_background"
+                android:layout_weight="0.6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/fragment_main_home_page_program_version_text"
+                    android:textSize="15dp"
+                    android:text="@string/fragment_main_home_page_program_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
